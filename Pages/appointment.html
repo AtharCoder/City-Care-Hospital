@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment -City Care Hospital</title>
+</head>
+
+<body>
+    <header>
+        <h1>City Care Hospital</h1>
+        <nav>
+            <a href="/index.html">Home</a> |
+            <a href="departments.html">Departments</a> |
+            <a href="doctors.html">Doctors</a> |
+            <a href="appointment.html">Appointment</a> |
+            <a href="contact.html">Contact</a> |
+            <a href="about.html">About</a>
+        </nav>
+    </header><br>
+    <main>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div>
+                    <label for="full-name">Enter Full Name:</label>
+                    <input type="text" name="full-name" id="full-name" required>
+                </div><br>
+                <div>
+                    <label for="email">Enter Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div><br>
+                <div>
+                    <label for="phone">Enter Phone:</label>
+                    <input type="tel" name="phone" id="phone" minlength="11" maxlength="11" required>
+                </div><br>
+                <div>
+                    <label for="gender">Gender:</label>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male" required>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                </div>
+            </fieldset><br>
+            <fieldset>
+                <legend>Appointment Details</legend>
+                <div>
+                    <label for="appoint-date">Preferred Appointment Date:</label>
+                    <input type="date" name="appoint-date" id="appoint-date">
+                </div>
+                <div><br>
+                    <label for="departments">Departments:</label>
+                    <select name="departments" id="departments">
+                        <option value="Cardiology">Cardiology</option>
+                        <option value="Neurology">Neurology</option>
+                        <option value="Orthopedics">Orthopedics</option>
+                    </select>
+                </div>
+            </fieldset><br>
+            <fieldset>
+                <legend>Additional Information</legend>
+                <div>
+                    <label for="reason">Briefly describe your medical concern or reason for visit:</label><br><br>
+                    <textarea name="reason" id="reason" cols="50" rows="5" required></textarea>
+                </div>
+            </fieldset><br>
+            <fieldset>
+                <legend>Agreement</legend>
+                <input type="checkbox" name="agreement" id="agreement" required>
+                <label for="agreement">I agree to the hospital's Terms and Conditions and consent to the use of my
+                    information for appointment scheduling.</label>
+                
+            </fieldset><br>
+            <button type="submit">Submit Appointment Request</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; Copyright 2026. City Care Hospital</p>
+        <div>
+            <span><strong>Address:</strong> Lorem ipsum dolor sit.</span>
+            <span><strong>Phone:</strong> 1234567890</span>
+        </div>
+    </footer>
+</body>
+
+</html>
